@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   /* Espresso & Cream palette */
   --color-espresso-900: #2a1b12;
@@ -15,32 +13,20 @@
   --color-gold-500: #c4956a;
   --color-gold-400: #d4a87a;
 
-  /* Semantic aliases */
-  --color-bg-primary: var(--color-cream-50);
-  --color-bg-secondary: var(--color-cream-100);
-  --color-text-primary: var(--color-espresso-800);
-  --color-text-secondary: var(--color-espresso-600);
-  --color-accent: var(--color-gold-500);
-  --color-accent-hover: var(--color-gold-400);
+  /* Semantic aliases — dark-dominant palette (inverted) */
+  --color-bg-primary: #2C1810;
+  --color-bg-secondary: #3C2415;
+  --color-text-primary: #F5F0EB;
+  --color-text-secondary: #EDE6DC;
+  --color-accent: #C9A96E;
+  --color-accent-hover: #D4B87A;
+
+  /* Surface elevations */
+  --color-surface-raised: #4A2C1A;
+  --color-surface-overlay: rgba(60, 36, 21, 0.8);
 
   --font-heading: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;
-}
-
-/* Dark mode overrides */
-.dark {
-  --color-bg-primary: var(--color-espresso-900);
-  --color-bg-secondary: var(--color-espresso-800);
-  --color-text-primary: var(--color-cream-100);
-  --color-text-secondary: var(--color-cream-200);
-  --color-accent: var(--color-gold-400);
-  --color-accent-hover: var(--color-gold-500);
-}
-
-/* Surface elevation system for dark mode */
-.dark {
-  --color-surface-raised: #2a2d2e;
-  --color-surface-overlay: #1e2021;
 }
 
 /* Subtle fade-in for hero heading */
@@ -59,9 +45,29 @@
   animation: fade-in 0.8s ease-out forwards;
 }
 
+/* Slow pulse for hero decorative circle */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.97);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
 /* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in {
+    animation: none;
+  }
+
+  .animate-pulse-slow {
     animation: none;
   }
 
@@ -78,5 +84,6 @@ body {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   font-family: var(--font-body);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.75;
 }

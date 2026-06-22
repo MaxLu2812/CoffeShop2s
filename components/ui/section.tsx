@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 const backgroundMap: Record<string, string> = {
   light: "bg-[var(--color-bg-primary)]",
   dark: "bg-[var(--color-bg-secondary)]",
-  cream: "bg-[var(--color-cream-100)]",
-  espresso: "bg-[var(--color-espresso-900)]",
+  cream: "bg-[var(--color-surface-raised)]",
+  espresso: "bg-[var(--color-bg-primary)]",
 };
 
 export default function Section({

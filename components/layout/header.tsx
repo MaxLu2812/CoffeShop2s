@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Container from "@/components/ui/container";
-import ThemeToggle from "@/components/layout/theme-toggle";
 import { navLinks, shopInfo } from "@/lib/data/site";
 
 export default function Header() {
@@ -30,8 +29,6 @@ export default function Header() {
 
         {/* Actions */}
         <div className="flex items-center gap-2">
-          <ThemeToggle />
-
           {/* Mobile hamburger (button only — mobile nav in Phase 5) */}
           <button
             aria-label="Open menu"

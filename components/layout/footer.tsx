@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[var(--color-espresso-900)] text-[var(--color-cream-100)]">
+    <footer className="bg-[var(--color-bg-primary)] text-[var(--color-cream-100)]">
       {/* Gold top border */}
       <div className="h-px w-full bg-gradient-to-r from-transparent via-[var(--color-accent)] to-transparent opacity-30" />
 
