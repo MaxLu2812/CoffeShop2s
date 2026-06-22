@@ -3,6 +3,7 @@ import { menuItems } from "@/lib/data/menu";
 import Container from "@/components/ui/container";
 import Section from "@/components/ui/section";
 import Card from "@/components/ui/card";
+import Heading from "@/components/ui/heading";
 import ScrollReveal from "@/components/animations/scroll-reveal";
 import StaggerContainer from "@/components/animations/stagger-container";
 import RevealItem from "@/components/animations/reveal-item";
@@ -15,9 +16,9 @@ export default function MenuPreview() {
       <Section background="cream" aria-label="Featured menu items">
         <Container>
           <div className="text-center">
-            <h2 className="font-[var(--font-heading)] text-3xl tracking-wide text-[var(--color-text-primary)] sm:text-4xl">
+            <Heading as="h2" variant="section">
               From Our Menu
-            </h2>
+            </Heading>
             <hr className="mx-auto mt-4 w-12 border-t-2 border-[var(--color-accent)]" />
             <p className="mt-4 font-[var(--font-body)] text-base text-[var(--color-text-secondary)] sm:text-lg">
               A selection of our favourites
@@ -27,7 +28,7 @@ export default function MenuPreview() {
           <StaggerContainer className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {featured.map((item) => (
               <RevealItem key={item.id}>
-                <Card>
+                <Card variant="glass">
                   <h3 className="font-[var(--font-heading)] text-xl font-semibold text-[var(--color-text-primary)]">
                     {item.name}
                   </h3>

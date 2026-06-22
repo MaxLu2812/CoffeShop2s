@@ -5,6 +5,7 @@ const backgroundMap: Record<string, string> = {
   light: "bg-[var(--color-bg-primary)]",
   dark: "bg-[var(--color-bg-secondary)]",
   cream: "bg-[var(--color-cream-100)]",
+  espresso: "bg-[var(--color-espresso-900)]",
 };
 
 export default function Section({

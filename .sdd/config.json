@@ -1,0 +1,40 @@
+{
+  "sdd_version": "1.0.0",
+  "project": "CoffeShopSite",
+  "init_date": "2026-06-22",
+  "stack": {
+    "framework": "Next.js 16.2.9",
+    "react": "19.2.4",
+    "typescript": "^5",
+    "css_framework": "Tailwind CSS v4",
+    "animation": "Framer Motion ^12.40.0",
+    "build_tool": "Next.js CLI (next build)",
+    "lint": "ESLint ^9 with eslint-config-next (core-web-vitals + typescript)"
+  },
+  "strict_tdd": false,
+  "testing": {
+    "available": false,
+    "reason": "No test runner installed. package.json has no test script and no test dependencies (jest, vitest, playwright, cypress, etc.). No test files found anywhere in the project."
+  },
+  "persistence": {
+    "mode": "hybrid",
+    "sdd_path": ".sdd/",
+    "artifacts_exist": true,
+    "existing_changes": ["premium-coffee-shop"]
+  },
+  "conventions": {
+    "architecture": "Clean/Hexagonal-inspired — role-based atomic folder structure (ui/, sections/, layout/, animations/)",
+    "server_client_boundary": "Server by default. Client components are thin leaves only — 6 'use client' files total.",
+    "data_layer": "Typed static TypeScript files in lib/data/ with i18n-ready interfaces (Record<string, string>)",
+    "theming": "CSS variables + class-based dark mode toggle with FOUC prevention inline script",
+    "animation_rule": "Only opacity and transform animated. whileInView + once:true. prefers-reduced-motion respected.",
+    "seo": "generateMetadata() per page, JSON-LD in root layout, static sitemap.ts + robots.ts",
+    "component_pattern": "Container-Presentational — server sections receive data as props, client wrappers provide animation shells",
+    "deployment": "Vercel (default Next.js target)"
+  },
+  "phase": {
+    "current": "init",
+    "completed_phases": ["explore", "design", "apply (partial — 6 PRs completed for premium-coffee-shop)"],
+    "next_recommended": "sdd-explore (for additional changes) or continue apply phases if premium-coffee-shop has remaining tasks"
+  }
+}

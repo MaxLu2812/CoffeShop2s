@@ -5,7 +5,7 @@ import { navLinks, shopInfo } from "@/lib/data/site";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--color-cream-200)] bg-[var(--color-bg-primary)]/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 border-b border-[var(--color-accent)]/20 bg-[var(--color-bg-primary)]/80 backdrop-blur-md">
       <Container className="flex items-center justify-between py-4">
         {/* Logo */}
         <Link

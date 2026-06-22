@@ -37,6 +37,12 @@
   --color-accent-hover: var(--color-gold-500);
 }
 
+/* Surface elevation system for dark mode */
+.dark {
+  --color-surface-raised: #2a2d2e;
+  --color-surface-overlay: #1e2021;
+}
+
 /* Subtle fade-in for hero heading */
 @keyframes fade-in {
   from {

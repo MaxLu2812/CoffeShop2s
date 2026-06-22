@@ -3,6 +3,7 @@ import { faqEntries } from "@/lib/data/faq";
 import Section from "@/components/ui/section";
 import Container from "@/components/ui/container";
 import ScrollReveal from "@/components/animations/scroll-reveal";
+import Heading from "@/components/ui/heading";
 import FaqAccordion from "@/components/sections/faq-accordion";
 
 export const metadata: Metadata = {
@@ -21,9 +22,9 @@ export default function FaqPage() {
       <Container>
         <ScrollReveal>
           <div className="text-center">
-            <h1 className="font-[var(--font-heading)] text-4xl font-bold tracking-tight text-[var(--color-text-primary)] sm:text-5xl">
+            <Heading as="h1" variant="section">
               Frequently Asked Questions
-            </h1>
+            </Heading>
             <hr className="mx-auto mt-4 w-12 border-t-2 border-[var(--color-accent)]" />
             <p className="mt-4 font-[var(--font-body)] text-base text-[var(--color-text-secondary)] sm:text-lg">
               Everything you need to know about Coffeewerk

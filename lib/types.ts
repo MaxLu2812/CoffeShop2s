@@ -7,21 +7,22 @@ export interface ContainerProps {
   children: React.ReactNode;
   className?: string;
   as?: React.ElementType;
+  variant?: "default" | "narrow" | "wide";
 }
 
 export interface SectionProps {
   children: React.ReactNode;
   className?: string;
   id?: string;
-  background?: "light" | "dark" | "cream";
+  background?: "light" | "dark" | "cream" | "espresso";
   "aria-label"?: string;
 }
 
 export interface HeadingProps {
   children: React.ReactNode;
-  as?: "h1" | "h2" | "h3" | "h4";
+  as?: "h1" | "h2" | "h3" | "h4" | "h5";
   className?: string;
-  animated?: boolean;
+  variant?: "hero" | "section" | "card" | "subtitle" | "eyebrow";
 }
 
 export interface ButtonProps {
@@ -35,6 +36,7 @@ export interface ButtonProps {
 export interface CardProps {
   children: React.ReactNode;
   className?: string;
+  variant?: "default" | "glass";
 }
 
 export interface MenuItem {

@@ -3,6 +3,7 @@ import { menuItems } from "@/lib/data/menu";
 import Container from "@/components/ui/container";
 import Section from "@/components/ui/section";
 import ScrollReveal from "@/components/animations/scroll-reveal";
+import Heading from "@/components/ui/heading";
 
 export const metadata: Metadata = {
   title: "Menu",
@@ -30,9 +31,9 @@ export default function MenuPage() {
       <Container>
         <ScrollReveal>
           <div className="text-center">
-            <h1 className="font-[var(--font-heading)] text-4xl font-bold tracking-tight text-[var(--color-text-primary)] sm:text-5xl">
+            <Heading as="h1" variant="section">
               Our Menu
-            </h1>
+            </Heading>
             <hr className="mx-auto mt-4 w-12 border-t-2 border-[var(--color-accent)]" />
             <p className="mt-4 font-[var(--font-body)] text-base text-[var(--color-text-secondary)] sm:text-lg">
               Specialty coffee, carefully sourced
@@ -45,19 +46,19 @@ export default function MenuPage() {
             const items = menuItems.filter((i) => i.category === cat);
             return (
               <section key={cat} aria-label={categoryLabels[cat]}>
-                <h2 className="mb-10 text-center font-[var(--font-heading)] text-lg font-semibold tracking-[0.2em] text-[var(--color-text-secondary)]">
+                <div className="mb-10 text-center font-[var(--font-heading)] text-lg font-semibold tracking-[0.2em] text-[var(--color-text-secondary)]">
                   <span className="mr-3 inline-block h-px w-6 align-middle bg-[var(--color-accent)]" />
                   {categoryLabels[cat]}
                   <span className="ml-3 inline-block h-px w-6 align-middle bg-[var(--color-accent)]" />
-                </h2>
+                </div>
                 <div className="mx-auto max-w-2xl space-y-8">
                   {items.map((item) => (
                     <div key={item.id}>
                       <div className="flex items-baseline justify-between gap-4">
                         <div className="flex items-center gap-3">
-                          <h3 className="font-[var(--font-heading)] text-xl font-medium text-[var(--color-text-primary)]">
+                          <Heading as="h3" variant="card">
                             {item.name}
-                          </h3>
+                          </Heading>
                           {item.featured && (
                             <span className="rounded-full bg-[var(--color-accent)] px-2.5 py-0.5 font-[var(--font-body)] text-[10px] font-semibold uppercase tracking-wider text-white">
                               Featured
