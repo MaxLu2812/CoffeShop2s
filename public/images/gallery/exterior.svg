@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#87CEEB" opacity="0.3"/>
+  <rect y="200" width="800" height="400" fill="#D4C4A8"/>
+  <rect x="150" y="100" width="500" height="350" rx="4" fill="#2C1810" opacity="0.85"/>
+  <rect x="170" y="180" width="200" height="250" fill="#FAF3ED" opacity="0.15"/>
+  <rect x="390" y="180" width="200" height="250" fill="#FAF3ED" opacity="0.15"/>
+  <rect x="170" y="430" width="460" height="20" rx="3" fill="#8B5E3C" opacity="0.5"/>
+  <rect x="150" y="80" width="500" height="25" rx="3" fill="#C4956A" opacity="0.6"/>
+  <rect x="370" y="108" width="60" height="60" rx="30" fill="#C4956A" opacity="0.4"/>
+  <rect x="180" y="470" width="120" height="40" rx="4" fill="#D4A574" opacity="0.4"/>
+  <rect x="320" y="470" width="120" height="40" rx="4" fill="#D4A574" opacity="0.4"/>
+  <rect x="460" y="470" width="120" height="40" rx="4" fill="#D4A574" opacity="0.4"/>
+  <circle cx="700" cy="100" r="40" fill="#FFD700" opacity="0.3"/>
+  <text x="400" y="555" font-family="Georgia, serif" font-size="14" fill="#2C1810" text-anchor="middle" opacity="0.5">Shop front with navy awning and outdoor terrace</text>
+</svg>

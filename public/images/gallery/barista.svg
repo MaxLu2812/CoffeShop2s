@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FAF3ED"/>
+  <rect x="300" y="180" width="200" height="240" rx="10" fill="#8B5E3C" opacity="0.2"/>
+  <rect x="340" y="140" width="16" height="50" rx="4" fill="#8B5E3C" opacity="0.3"/>
+  <rect x="440" y="140" width="16" height="50" rx="4" fill="#8B5E3C" opacity="0.3"/>
+  <ellipse cx="400" cy="180" rx="60" ry="20" fill="#8B5E3C" opacity="0.15"/>
+  <rect x="370" y="350" width="60" height="70" rx="4" fill="#C4956A" opacity="0.4"/>
+  <circle cx="400" cy="365" r="10" fill="#F5EDE3" opacity="0.6"/>
+  <text x="400" y="520" font-family="Georgia, serif" font-size="14" fill="#2C1810" text-anchor="middle" opacity="0.5">Barista pouring latte art into a ceramic cup</text>
+</svg>

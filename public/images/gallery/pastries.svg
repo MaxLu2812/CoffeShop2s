@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FAF3ED"/>
+  <ellipse cx="260" cy="340" rx="90" ry="50" fill="#C4956A" opacity="0.5"/>
+  <path d="M170 340 Q260 220 350 340" fill="#D4A574" opacity="0.4"/>
+  <ellipse cx="540" cy="340" rx="60" ry="35" fill="#8B5E3C" opacity="0.3"/>
+  <rect x="510" y="280" width="60" height="60" rx="8" fill="#C4956A" opacity="0.4"/>
+  <ellipse cx="400" cy="420" rx="120" ry="30" fill="#2C1810" opacity="0.08"/>
+  <text x="400" y="520" font-family="Georgia, serif" font-size="14" fill="#2C1810" text-anchor="middle" opacity="0.5">Freshly baked croissants and cinnamon scrolls</text>
+</svg>

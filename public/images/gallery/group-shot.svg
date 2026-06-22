@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FAF3ED"/>
+  <rect x="130" y="280" width="540" height="240" rx="16" fill="#D4A574" opacity="0.25"/>
+  <circle cx="280" cy="360" r="40" fill="#8B5E3C" opacity="0.15"/>
+  <circle cx="400" cy="350" r="40" fill="#8B5E3C" opacity="0.15"/>
+  <circle cx="520" cy="360" r="40" fill="#8B5E3C" opacity="0.15"/>
+  <rect x="370" y="420" width="60" height="70" rx="6" fill="#C4956A" opacity="0.35"/>
+  <rect x="250" y="420" width="60" height="70" rx="6" fill="#C4956A" opacity="0.35"/>
+  <rect x="490" y="420" width="60" height="70" rx="6" fill="#C4956A" opacity="0.35"/>
+  <rect x="180" y="520" width="440" height="40" rx="20" fill="#2C1810" opacity="0.06"/>
+  <text x="400" y="550" font-family="Georgia, serif" font-size="14" fill="#2C1810" text-anchor="middle" opacity="0.5">Group of friends laughing over coffee at the communal table</text>
+</svg>
